@@ -1,0 +1,60 @@
+
+   .header{
+    @include spacing(0, 40px 20px);
+   
+    &__container{
+        @include flex(flex, row wrap,space-between,center);
+    }
+
+    &__info{
+        @include flex(flex, row wrap, center, center);
+    }
+
+    &__img{
+        width: 150px;
+    }
+
+    &__text{
+        @include spacing(0,10px);
+        @include fonts(10px, bold);
+        width: 210px;
+        text-transform: uppercase;
+        text-align: end;
+        display: none;
+    }
+    &__button{
+        @include spacing(0px 0px 0px 10px, 10px 20px);
+        @include colorized($color-secondary,$color-thrid);
+        @include fonts(14px, bold);
+        border-radius: 50%;
+    }
+    &__title{
+        @include fonts(40px, bold);
+        @include spacing(60px 0px, 0px);
+        width: 350px; 
+        line-height: 30px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header__title{
+        @include fonts(70px, bold);
+        @include spacing(60px 0px 0px, 0px);
+        width: 100%;
+        line-height: 60px;
+        transition-duration: 0.5s;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__title{
+        @include fonts(70px,bold);
+        @include spacing(60px 0px 0px, 0px);
+        width: 70%;
+        line-height: 60px;
+        transition-duration: 0.5s;
+    }
+    .header__text{
+        display: block;
+        
+    }
+}

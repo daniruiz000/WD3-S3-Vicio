@@ -1,0 +1,15 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'layouts/card';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/grid';
+
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: $color-thrid;
+    font-family: $font-family;
+}

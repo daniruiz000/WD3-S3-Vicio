@@ -1,0 +1,66 @@
+
+ .card{
+    @include colorized ($color-principal, &$color-secondary);
+    @include spacing(0px, 40px);
+    @include flex(flex, column wrap);
+    box-shadow: 0px 10px 40px 10px rgba(0,0,0,0.3);
+    border-radius: 30px;
+   
+
+    &__header{
+        @include flex(flex, row wrap, flex-start);
+    }
+    &__img{
+        width: 50px;
+        border-radius: 50px;
+    }
+    &__title{
+        @include spacing(0px, 0px 0px 0px 20px);
+    }
+    &__name{
+        @include spacing(2px, 0px);
+        @include fonts(20px, regular);
+    }
+    &__description-name{
+        @include spacing(2px, 0px);
+        @include fonts(15px, lighter);
+    }
+    &__title-comment{
+        @include fonts(24px, regular);
+    }
+    &__comment{
+        @include fonts(16px, regular);
+    }
+    &--principal{
+        @include spacing(10px 0px, 40px);
+        @include colorized($color-principal, $color-principal-card);
+        @include flex(flex, column wrap);
+        background-image: url(../assets/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position:84% 3%;
+    }
+    &--black{
+        @include colorized($color-principal, $color-secondary);
+ 
+    }
+    &--white{
+        @include colorized($color-secondary, $color-principal);
+      
+    }
+}
+.card--item-1{
+    grid-area: item-1;
+}
+.card--item-2{
+    grid-area: item-2;
+}
+.card--item-3{
+    grid-area: item-3;
+}
+.card--item-4{
+    grid-area: item-4;
+}
+.card--item-5{
+    grid-area: item-5;
+}

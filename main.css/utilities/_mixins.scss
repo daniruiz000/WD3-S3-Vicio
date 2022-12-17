@@ -1,0 +1,21 @@
+
+@mixin flex($display, $flex-flow, $justify-content:normal, $align-content:normal){
+    display: $display;
+    flex-flow: $flex-flow;
+    justify-content: $justify-content;
+    align-content:$align-content;
+}
+
+@mixin spacing($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin colorized($color, $background-color){
+    color:$color ;
+    background-color:$background-color;
+}
+@mixin fonts($font-size, $font-weight:normal){
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
