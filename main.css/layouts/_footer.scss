@@ -15,7 +15,7 @@
         list-style-type: none;
         li{
             @include spacing(10px 0px, 0px);
-            @include colorized ($color-footer, &$color-principal);
+            @include colorized ($color-fourth, &$color-principal);
         }
     }
 }

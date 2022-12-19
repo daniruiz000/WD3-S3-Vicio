@@ -12,17 +12,19 @@
 }
 .card__header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
-  align-content: normal;
+  align-content: center;
+  align-items: center;
 }
 .card__img {
   width: 50px;
+  height: 50px;
   border-radius: 50px;
 }
 .card__title {
   margin: 0px;
-  padding: 0px 0px 0px 20px;
+  padding: 10px 0px 10px 20px;
 }
 .card__name {
   margin: 2px;
@@ -58,13 +60,25 @@
   background-size: 150px;
   background-position: 84% 3%;
 }
+.card--principal:hover {
+  color: black;
+  background-color: white;
+}
 .card--black {
   color: white;
   background-color: black;
 }
+.card--black:hover {
+  color: white;
+  background-color: gray;
+}
 .card--white {
   color: black;
   background-color: white;
+}
+.card--white:hover {
+  color: white;
+  background-color: gray;
 }
 
 .card--item-1 {
@@ -124,6 +138,10 @@
   font-size: 14px;
   font-weight: bold;
   border-radius: 50%;
+}
+.header__button:hover {
+  color: white;
+  background-color: black;
 }
 .header__title {
   font-size: 40px;

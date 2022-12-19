@@ -27,6 +27,9 @@
         @include colorized($color-secondary,$color-thrid);
         @include fonts(14px, bold);
         border-radius: 50%;
+        &:hover{
+            @include colorized($color-principal, $color-secondary); 
+        }
     }
     &__title{
         @include fonts(40px, bold);

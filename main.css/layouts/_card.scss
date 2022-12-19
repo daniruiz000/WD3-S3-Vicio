@@ -8,14 +8,16 @@
    
 
     &__header{
-        @include flex(flex, row wrap, flex-start);
+        @include flex(flex, row nowrap, flex-start, center);
+        align-items: center;
     }
     &__img{
         width: 50px;
+        height: 50px;
         border-radius: 50px;
     }
     &__title{
-        @include spacing(0px, 0px 0px 0px 20px);
+        @include spacing(0px, 10px 0px 10px 20px);
     }
     &__name{
         @include spacing(2px, 0px);
@@ -39,14 +41,22 @@
         background-repeat: no-repeat;
         background-size: 150px;
         background-position:84% 3%;
+        &:hover{
+            @include colorized($color-secondary, $color-principal); 
+        }
     }
     &--black{
         @include colorized($color-principal, $color-secondary);
+        &:hover{
+            @include colorized($color-principal, $color-fourth); 
+        }
  
     }
     &--white{
         @include colorized($color-secondary, $color-principal);
-      
+        &:hover{
+            @include colorized($color-principal, $color-fourth); 
+        }
     }
 }
 .card--item-1{
