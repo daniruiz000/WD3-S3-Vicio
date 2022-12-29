@@ -1,0 +1,45 @@
+
+.footer{
+    text-align: center;
+    &__notices{
+        @include text-as(20px, bold);
+        @include spaceling(0, 10px);
+        li{
+            @include spaceling(10px 0px, 0px);
+        }
+    }
+    &__legal{
+        @include text-as(14px, regular);
+        @include spaceling(0, 10px);
+        li{
+            @include spaceling(10px 0px, 0px);
+            @include colorized ($color-fourth, $color-principal);
+        }
+    }
+    @include media-querys(768px){
+            @include flex($justify-content:space-between, $align-items:center);
+            @include spaceling(0px 50px 20px, 0px);
+            @include text-as($text-align: center);
+            transition-duration: 0.5s;
+            li{
+                @include spaceling(5px, 0px);
+                @include text-as(12px, regular);
+                display: inline;
+                transition-duration: 0.5s;
+            }   
+    }
+    @include media-querys(1024px){
+            @include flex($justify-content:space-between, $align-items:center);
+            @include spaceling(0px 50px 20px, 0px);
+            @include text-as($text-align: center);
+            transition-duration: 0.5s;
+            li{
+                @include spaceling(5px, 0px);
+                @include text-as(12px, regular);
+                display: inline;
+                transition-duration: 0.5s;
+            }
+    }
+}
+
+

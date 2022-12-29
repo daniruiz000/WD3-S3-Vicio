@@ -1,15 +1,12 @@
 
  .card{
-    @include colorized ($color-principal, &$color-secondary);
-    @include spacing(0px, 40px);
-    @include flex(flex, column wrap);
+    @include colorized ($color-principal, $color-secondary);
+    @include spaceling(0px, 40px);
+    @include flex(column wrap);
     box-shadow: 0px 10px 40px 10px rgba(0,0,0,0.3);
     border-radius: 30px;
-   
-
     &__header{
-        @include flex(flex, row nowrap, flex-start, center);
-        align-items: center;
+        @include flex($flex-flow:row nowrap, $justify-content:normal, $align-items:center);
     }
     &__img{
         width: 50px;
@@ -17,26 +14,26 @@
         border-radius: 50px;
     }
     &__title{
-        @include spacing(0px, 10px 0px 10px 20px);
+        @include spaceling(0px, 10px 0px 10px 20px);
     }
     &__name{
-        @include spacing(2px, 0px);
-        @include fonts(20px, regular);
+        @include spaceling(2px, 0px);
+        @include text-as(20px);
     }
     &__description-name{
-        @include spacing(2px, 0px);
-        @include fonts(15px, lighter);
+        @include spaceling(2px, 0px);
+        @include text-as(15px, lighter);
     }
     &__title-comment{
-        @include fonts(24px, regular);
+        @include text-as(24px);
     }
     &__comment{
-        @include fonts(16px, regular);
+        @include text-as(16px);
     }
     &--principal{
-        @include spacing(10px 0px, 40px);
+        @include spaceling(10px 0px, 40px);
         @include colorized($color-principal, $color-principal-card);
-        @include flex(flex, column wrap);
+        @include flex(column wrap);
         background-image: url(../assets/bg-pattern-quotation.svg);
         background-repeat: no-repeat;
         background-size: 150px;

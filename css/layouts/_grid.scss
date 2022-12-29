@@ -1,7 +1,8 @@
 
 .section-container{
-    @include spacing(0px, 40px);
+    @include spaceling(0px, 40px);
     display: grid;
+    width: 100%;
     grid-template-areas:
         "item-1 " 
         "item-2 " 
@@ -13,24 +14,17 @@
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: 0 10%;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    .section-container{
+    @include media-querys(768px){
         transition-duration: 0.5s;
         grid-template-areas:
             "item-1 item-1 item-2 " 
             "item-3 item-4 item-4 " 
             "item-5 item-5 item-5 ";
-    }
-} 
-
-@media screen and (min-width: 1024px) {
-    .section-container{
+        }
+    @include media-querys(1024px){
         transition-duration: 0.5s;
         grid-template-areas:
             "item-1 item-1 item-2 item-5 " 
             "item-3 item-4 item-4 item-5 ";
-    }
+        }
 }

@@ -1,0 +1,56 @@
+
+   .header{
+    @include spaceling(0, 40px 20px);
+    &__container{
+        @include flex($justify-content:space-between, $align-items:center);
+    }
+    &__info{
+        @include flex($justify-content:center, $align-items:center);
+    }
+    &__img{
+        width: 150px;
+    }
+    &__text{
+        @include spaceling(0,10px);
+        @include text-as(10px, bold, $text-align:end, $text-transform:uppercase);
+        width: 210px;
+        display: none;
+    }
+    &__button{
+        @include spaceling(0px 0px 0px 10px, 10px 20px);
+        @include colorized($color-secondary,$color-thrid);
+        @include text-as(14px, bold);
+        border-radius: 50%;
+        &:hover{
+            @include colorized($color-principal, $color-secondary); 
+        }
+    }
+    &__title{
+        @include text-as(40px, bold);
+        @include spaceling(60px 0px, 0px);
+        width: 350px; 
+        line-height: 30px;
+    }
+    @include media-querys(768px){
+        &__title{
+            @include text-as(70px, bold);
+            @include spaceling(60px 0px 0px, 0px);
+            width: 100%;
+            line-height: 60px;
+            transition-duration: 0.5s;
+        }
+    }
+    @include media-querys(1024px){
+        &__title{
+            @include text-as(70px,bold);
+            @include spaceling(60px 0px 0px, 0px);
+            width: 70%;
+            line-height: 60px;
+            transition-duration: 0.5s;
+        }
+        &__text{
+            display: block;
+            
+        } 
+    }
+}

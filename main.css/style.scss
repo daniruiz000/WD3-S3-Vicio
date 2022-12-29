@@ -1,15 +1,9 @@
-@import 'utilities/variables';
-@import 'utilities/mixins';
-@import 'layouts/card';
-@import 'layouts/header';
-@import 'layouts/footer';
-@import 'layouts/grid';
 
+@import '../css/utilities/variables';
+@import '../css/utilities/mixin';
+@import '../css/base/reset';
+@import '../css/layouts/card';
+@import '../css/layouts/header';
+@import '../css/layouts/grid';
+@import '../css/layouts/footer';
 
-
-body{
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: $color-thrid;
-    font-family: $font-family;
-}
