@@ -37,7 +37,6 @@
             @include spaceling(60px 0px 0px, 0px);
             width: 100%;
             line-height: 60px;
-            transition-duration: 0.5s;
         }
     }
     @include media-querys(1024px){
@@ -46,7 +45,6 @@
             @include spaceling(60px 0px 0px, 0px);
             width: 70%;
             line-height: 60px;
-            transition-duration: 0.5s;
         }
         &__text{
             display: block;

@@ -1,7 +1,7 @@
-@mixin flex ($display:flex, $flex-flow:row wrap, $justify-content:normal, $align-items:normal){
+@mixin flex ($display:flex, $direction:row, $wrap:nowrap, $justify-content:normal, $align-items:normal){
     display: $display;
-    flex-flow: $flex-flow;
-    justify-content:$justify-content ;
+    flex-flow: $direction $wrap;
+    justify-content:$justify-content;
     align-items:$align-items;
 }
 
@@ -10,12 +10,12 @@
     padding:$padding;
 }
 
-@mixin colorized ($color:$color-principal, $background-color: transparent){
+@mixin colorized ($color:$color-principal, $background-color:transparent){
     color: $color;
     background-color:$background-color;
 }
 
-@mixin text-as($font-size:normal, $font-weight:normal, $text-decoration:none, $text-align:none, $font-style:none, $text-transform:none){
+@mixin text-as($font-size:inherit, $font-weight:normal, $text-decoration:none, $text-align:initial, $font-style:initial, $text-transform:none){
     font-size: $font-size;
     font-weight: $font-weight;
     text-decoration: $text-decoration;

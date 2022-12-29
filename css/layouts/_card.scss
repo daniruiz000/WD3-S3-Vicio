@@ -2,11 +2,12 @@
  .card{
     @include colorized ($color-principal, $color-secondary);
     @include spaceling(0px, 40px);
-    @include flex(column wrap);
+    @include flex($direction:column, $wrap:wrap);
     box-shadow: 0px 10px 40px 10px rgba(0,0,0,0.3);
     border-radius: 30px;
     &__header{
-        @include flex($flex-flow:row nowrap, $justify-content:normal, $align-items:center);
+        @include flex($wrap:nowrap, $justify-content:normal, $align-items:center);
+        @include spaceling(0 0 0 20px);
     }
     &__img{
         width: 50px;
@@ -33,7 +34,7 @@
     &--principal{
         @include spaceling(10px 0px, 40px);
         @include colorized($color-principal, $color-principal-card);
-        @include flex(column wrap);
+        @include flex($direction:column, $wrap:wrap);
         background-image: url(../assets/bg-pattern-quotation.svg);
         background-repeat: no-repeat;
         background-size: 150px;

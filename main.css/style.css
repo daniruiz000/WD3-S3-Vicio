@@ -95,8 +95,8 @@ body {
   background-color: black;
   margin: 0px;
   padding: 40px;
-  display: column wrap;
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: normal;
   align-items: normal;
   box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.3);
@@ -107,6 +107,8 @@ body {
   flex-flow: row nowrap;
   justify-content: normal;
   align-items: center;
+  margin: 0 0 0 20px;
+  padding: 0;
 }
 .card__img {
   width: 50px;
@@ -123,8 +125,8 @@ body {
   font-size: 20px;
   font-weight: normal;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
 }
 .card__description-name {
@@ -133,24 +135,24 @@ body {
   font-size: 15px;
   font-weight: lighter;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
 }
 .card__title-comment {
   font-size: 24px;
   font-weight: normal;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
 }
 .card__comment {
   font-size: 16px;
   font-weight: normal;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
 }
 .card--principal {
@@ -158,8 +160,8 @@ body {
   padding: 40px;
   color: white;
   background-color: red;
-  display: column wrap;
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: normal;
   align-items: normal;
   background-image: url(../assets/bg-pattern-quotation.svg);
@@ -214,13 +216,13 @@ body {
 }
 .header__container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
 .header__info {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -234,7 +236,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   text-align: end;
-  font-style: none;
+  font-style: initial;
   text-transform: uppercase;
   width: 210px;
   display: none;
@@ -247,8 +249,8 @@ body {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
   border-radius: 50%;
 }
@@ -260,8 +262,8 @@ body {
   font-size: 40px;
   font-weight: bold;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
   margin: 60px 0px;
   padding: 0px;
@@ -273,14 +275,13 @@ body {
     font-size: 70px;
     font-weight: bold;
     text-decoration: none;
-    text-align: none;
-    font-style: none;
+    text-align: initial;
+    font-style: initial;
     text-transform: none;
     margin: 60px 0px 0px;
     padding: 0px;
     width: 100%;
     line-height: 60px;
-    transition-duration: 0.5s;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -288,14 +289,13 @@ body {
     font-size: 70px;
     font-weight: bold;
     text-decoration: none;
-    text-align: none;
-    font-style: none;
+    text-align: initial;
+    font-style: initial;
     text-transform: none;
     margin: 60px 0px 0px;
     padding: 0px;
     width: 70%;
     line-height: 60px;
-    transition-duration: 0.5s;
   }
   .header__text {
     display: block;
@@ -316,26 +316,29 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-container {
-    transition-duration: 0.5s;
     grid-template-areas: "item-1 item-1 item-2 " "item-3 item-4 item-4 " "item-5 item-5 item-5 ";
   }
 }
 @media screen and (min-width: 1024px) {
   .section-container {
-    transition-duration: 0.5s;
     grid-template-areas: "item-1 item-1 item-2 item-5 " "item-3 item-4 item-4 item-5 ";
   }
 }
 
 .footer {
+  font-size: inherit;
+  font-weight: normal;
+  text-decoration: none;
   text-align: center;
+  font-style: initial;
+  text-transform: none;
 }
 .footer__notices {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
   margin: 0;
   padding: 10px;
@@ -348,8 +351,8 @@ body {
   font-size: 14px;
   font-weight: regular;
   text-decoration: none;
-  text-align: none;
-  font-style: none;
+  text-align: initial;
+  font-style: initial;
   text-transform: none;
   margin: 0;
   padding: 10px;
@@ -363,18 +366,17 @@ body {
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0px 50px 20px;
     padding: 0px;
-    font-size: normal;
+    font-size: inherit;
     font-weight: normal;
     text-decoration: none;
     text-align: center;
-    font-style: none;
+    font-style: initial;
     text-transform: none;
-    transition-duration: 0.5s;
   }
   .footer li {
     margin: 5px;
@@ -382,28 +384,26 @@ body {
     font-size: 12px;
     font-weight: regular;
     text-decoration: none;
-    text-align: none;
-    font-style: none;
+    text-align: initial;
+    font-style: initial;
     text-transform: none;
     display: inline;
-    transition-duration: 0.5s;
   }
 }
 @media screen and (min-width: 1024px) {
   .footer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0px 50px 20px;
     padding: 0px;
-    font-size: normal;
+    font-size: inherit;
     font-weight: normal;
     text-decoration: none;
     text-align: center;
-    font-style: none;
+    font-style: initial;
     text-transform: none;
-    transition-duration: 0.5s;
   }
   .footer li {
     margin: 5px;
@@ -411,10 +411,9 @@ body {
     font-size: 12px;
     font-weight: regular;
     text-decoration: none;
-    text-align: none;
-    font-style: none;
+    text-align: initial;
+    font-style: initial;
     text-transform: none;
     display: inline;
-    transition-duration: 0.5s;
   }
 }/*# sourceMappingURL=style.css.map */

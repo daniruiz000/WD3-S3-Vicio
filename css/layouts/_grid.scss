@@ -15,14 +15,12 @@
     background-size: 1000px;
     background-position: 0 10%;
     @include media-querys(768px){
-        transition-duration: 0.5s;
         grid-template-areas:
             "item-1 item-1 item-2 " 
             "item-3 item-4 item-4 " 
             "item-5 item-5 item-5 ";
         }
     @include media-querys(1024px){
-        transition-duration: 0.5s;
         grid-template-areas:
             "item-1 item-1 item-2 item-5 " 
             "item-3 item-4 item-4 item-5 ";
